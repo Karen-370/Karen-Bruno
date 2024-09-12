@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 10</title>
+    <link rel = "stylesheet" href="estilo.css">
+    <link rel="icon" href="kahlogo.png.png" type="image/png">
+</head>
+<body>
+    <script>
+  var palavras = ["pato", "sapo", "lago","pato", "sapo", "lago","pato",
+    "sapo", "lago","pato", "sapo", "lago","pato", "sapo", "lago","pato",
+    "sapo", "lago","pato", "sapo", "lago","pato", "sapo", "lago","pato", 
+    "sapo", "lago","pato", "sapo", "lago","pato", "sapo", "lago","pato", 
+    "sapo", "lago","pato", "sapo", "lago","pato", "sapo", "lago","pato", 
+    "sapo", "lago","pato", "sapo", "lago"
+]
+
+var palavraEscolhida = prompt("Escolha uma palavra entre Pato, Sapo e Lago.࿐*:･ﾟ").toLowerCase();
+
+var contagem = 0
+
+for(var i=0;i<palavras.length;i++){
+    if(palavras[i]===palavraEscolhida){
+        contagem++
+    }
+}
+alert("A palavra se repete " +contagem+ " vezes.")
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 8</title>
+    <link rel = "stylesheet" href="estilo.css">
+    <link rel="icon" href="kahlogo.png.png" type="image/png">
+</head>
+<body>
+    <script>
+  function encontrarmedia(vetor){
+    let soma=0
+    for(let i=0; i<vetor.length; i++){
+        soma += vetor [i]
+    }
+    let media = soma / vetor.length
+    return media
+}
+
+function novovetor(_quantidadeitens){
+    let vetor = Array()
+    for(let pq=0; pq < _quantidadeitens; pq++){
+        vetor[pq] = parseInt(prompt("Insira os valores para a média: "))
+    }
+    return vetor;
+}
+var q = parseInt(prompt("Insira a quantia de valores desejados: "));
+const array = novovetor(q);
+alert(encontrarmedia(array));
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 6</title>
+    <link rel = "stylesheet" href="estilo.css">
+    <link rel="icon" href="kahlogo.png.png" type="image/png">
+</head>
+<body>
+    <script>
+  const numero_surpresa = 7
+let y;
+
+do{
+    let y= parseFloat(prompt("Digite um número de 1 a 10 até descobrir o número secreto!!!"));
+    if(y==numero_surpresa){
+        alert("Parábens, você descobriu o número secreto!")
+        break;
+    }
+    else if(y!==numero_surpresa){
+        alert("Número errado :( Tente outra vez!")
+    }
+    y++
+}while(y!==numero_surpresa)
+    </script>
+</body>
+</html>
